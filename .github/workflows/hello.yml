@@ -21,5 +21,9 @@ jobs:
         with:
           node-version: 16
       - name: install dependecies
-        run: npm install
+        run: npm install --no-audit --no-fund --no-optional
+      - name: Build
+        run: npm run Build
+      - name: Test
+        run: npm test
    
